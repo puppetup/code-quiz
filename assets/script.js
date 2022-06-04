@@ -1,6 +1,7 @@
+//list of questions and corresponding options
 var myQuestions= [
     {
-        question: 'Answer is B?',
+        questionText: 'Answer is B?',
         options: {
             a: 'a',
             b: 'b',
@@ -10,7 +11,7 @@ var myQuestions= [
         answer: 'b',
     },
     {
-        question: 'Answer is B?',
+        questionText: 'Answer is B?',
         options: {
             a: 'a',
             b: 'b',
@@ -20,7 +21,7 @@ var myQuestions= [
         answer: 'b',
     },
     {
-        question: 'Answer is B?',
+        questionText: 'Answer is B?',
         options: {
             a: 'a',
             b: 'b',
@@ -30,7 +31,7 @@ var myQuestions= [
         answer: 'b',
     },
     {
-        question: 'Answer is B?',
+        questionText: 'Answer is B?',
         options: {
             a: 'a',
             b: 'b',
@@ -42,3 +43,24 @@ var myQuestions= [
     
 ];
 
+//variables assigned to cards
+var startCard = document.getElementById("#start-card");
+var quizCard = document.getElementById("#quiz-card");
+
+//current question variable
+var currentQuestion
+
+//start quiz function
+function startQuiz() {
+
+}
+
+//show question + options
+function showQuestion() {
+    var question = [currentQuestion];
+    var options = myQuestions.options;
+
+    var questionDisplayed = document.getElementById('#question-text')
+    questionDisplayed.textContent = myQuestions.questionText
+
+}
