@@ -47,9 +47,11 @@ var myQuestions = [
 var startCard = document.getElementById("start-card");
 var quizCard = document.getElementById("quiz-card");
 
-console.log(startCard)
+
 //current question variable
 var currentQuestion
+
+document.getElementById("start-button").addEventListener('click', startQuiz);
 
 //start quiz function
 function startQuiz() {
@@ -76,4 +78,4 @@ function showQuestion() {
 
 }
 
-startQuiz()
+document.getElementById('')
