@@ -2,42 +2,42 @@
 var myQuestions= [
     {
         questionText: 'Answer is B?',
-        options: {
+        options: [
             a: 'a',
             b: 'b',
             c: 'c',
             d: 'd'
-        }
+        ]
         answer: 'b',
     },
     {
         questionText: 'Answer is B?',
-        options: {
+        options: [
             a: 'a',
             b: 'b',
             c: 'c',
             d: 'd'
-        }
+        ]
         answer: 'b',
     },
     {
         questionText: 'Answer is B?',
-        options: {
+        options: [
             a: 'a',
             b: 'b',
             c: 'c',
             d: 'd'
-        }
+        ]
         answer: 'b',
     },
     {
         questionText: 'Answer is B?',
-        options: {
+        options: [
             a: 'a',
             b: 'b',
             c: 'c',
             d: 'd'
-        }
+        ]
         answer: 'b',
     }
     
@@ -60,7 +60,11 @@ function showQuestion() {
     var question = [currentQuestion];
     var options = myQuestions.options;
 
-    var questionDisplayed = document.getElementById('#question-text')
-    questionDisplayed.textContent = myQuestions.questionText
+    var questionDisplayed = document.getElementById('#question-text');
+    questionDisplayed.textContent = myQuestions.questionText;
+
+    for (let i = 0; i < options.length; i++) {
+
+    }
 
 }
