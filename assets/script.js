@@ -51,6 +51,7 @@ var quizCard = document.getElementById("quiz-card");
 //current question variable
 var currentQuestion
 
+//starts quiz
 document.getElementById("start-button").addEventListener('click', startQuiz);
 
 //start quiz function
@@ -63,19 +64,32 @@ function startQuiz() {
 
 //show question + options
 function showQuestion() {
-    var question = myQuestions[0];
+    var question = myQuestions[currentQuestion];
     var options = question.options;
 
     var questionDisplayed = document.getElementById('question-text');
     questionDisplayed.textContent = question.questionText;
 
     for (let i = 0; i < options.length; i++) {
-        let option = options[i];
-        let optionButton = document.getElementById('option' + i)
+        var option = options[i];
+        var optionButton = document.getElementById('option' + i)
         optionButton.textContent = option;
 
     }
 
 }
 
-document.getElementById('')
+//check answer when clicked
+document.getElementById('options').addEventListener('click', checkAnswer);
+
+function isCorrect (optionButton) {
+    var optionButton = optionButton.target
+    
+    if (optionButton.textContent === myQuestions[currentQuestion].answer) {
+        return console.log('nice')
+    } ;
+    
+}
+
+function checkAnswer ()
+
