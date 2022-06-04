@@ -3,41 +3,41 @@ var myQuestions= [
     {
         questionText: 'Answer is B?',
         options: [
-            a: 'a',
-            b: 'b',
-            c: 'c',
-            d: 'd'
-        ]
-        answer: 'b',
+           '1. answer',
+           '2. answer',
+           '3. answer',
+           '4. answer'
+        ],
+        answer: '4. answer',
     },
     {
         questionText: 'Answer is B?',
         options: [
-            a: 'a',
-            b: 'b',
-            c: 'c',
-            d: 'd'
-        ]
-        answer: 'b',
+            '1. answer',
+            '2. answer',
+            '3. answer',
+            '4. answer'
+        ],
+        answer: '4. answer'
     },
     {
         questionText: 'Answer is B?',
         options: [
-            a: 'a',
-            b: 'b',
-            c: 'c',
-            d: 'd'
-        ]
-        answer: 'b',
+           '1. answer',
+           '2. answer',
+           '3. answer',
+           '4. answer'
+        ],
+        answer: '4. answer'
     },
     {
         questionText: 'Answer is B?',
         options: [
-            a: 'a',
-            b: 'b',
-            c: 'c',
-            d: 'd'
-        ]
+            '1. answer',
+            '2. answer',
+            '3. answer',
+            '4. answer'
+        ],
         answer: 'b',
     }
     
@@ -64,6 +64,9 @@ function showQuestion() {
     questionDisplayed.textContent = myQuestions.questionText;
 
     for (let i = 0; i < options.length; i++) {
+        let option = options[i];
+        let optionButton = document.getElementById('#option' + i)
+        optionButton.textContent = option;
 
     }
 
