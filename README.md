@@ -1,4 +1,4 @@
-# code-quiz
+# Vanilla Javascript Quiz Version 1.0
 
 ## Description
 A fun quiz to test your Javascript knowledge. There are 4 questions that must be answered before time runs out. Each wrong answer subtracts 10 seconds from time remaining. The scores are then stored in a scoreboard.
